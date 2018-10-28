@@ -11,8 +11,8 @@ import java.util.Scanner;
 
 public class ReadTags {
 //    public static String path = "F:\\github\\Arrays\\Stochastic resonance\\data\\RFIDdata\\Data0921";
-    public static String path = "..\\Matlab\\Data\\";
-    public static String TEXTNAME = "10s";
+    public static String path = "..\\Matlab\\线极化天线两个都转\\";
+    public static String TEXTNAME = "180s";
     public static String hostname = "169.254.0.22";
     public static void main(String[] args) {
         try {
@@ -20,7 +20,7 @@ public class ReadTags {
             if (!file.exists() && !file.isDirectory()) {
                 file.mkdirs();
             }
-            Thread.sleep(15000);
+//            Thread.sleep(15000);
             Toolkit.getDefaultToolkit().beep();
 //            String hostname = "speedwayr-10-AB-5A";
 //            String hostname = "speedwayr-10-AB-5A";
@@ -35,7 +35,7 @@ public class ReadTags {
 //                Thread.sleep(20000);
 //                Toolkit.getDefaultToolkit().beep();
 //            }
-            Thread.sleep(60000);
+            Thread.sleep(3000);
 //            long mm = System.currentTimeMillis();
             reader.stop();
 //            long m = System.currentTimeMillis();

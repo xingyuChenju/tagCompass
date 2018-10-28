@@ -1,5 +1,8 @@
-datapath = 'Data';
-addpath('Data');
+clear all
+close all
+datapath = 'Data1';
+datapath = '线极化天线两个都转';
+addpath(datapath);
 ant_type = 's';
 epc_col =1;
 phase_col =2;
@@ -10,6 +13,8 @@ degrees =[];
 for i = 3:length(files)
     filename = files(i).name;
     data = load(filename);
+    index = data(:,epc_col)==1;
+    data = data(index,:);
     rssi_val = mean(data(:,rssi_col));
     strs = split(filename,ant_type);
     degree = str2num(strs{1});

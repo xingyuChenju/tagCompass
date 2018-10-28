@@ -24,9 +24,9 @@
   "filters": {
     "Mode": "OnlyFilter1",
     "TagFilter1": {
-      "TagMask": "18083001",
+      "TagMask": "181012",
       "BitPointer": 32,
-      "BitCount": 32,
+      "BitCount": 24,
       "MemoryBank": "Epc",
       "FilterOp": "Match"
     },

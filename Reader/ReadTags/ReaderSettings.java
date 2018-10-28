@@ -69,12 +69,12 @@ public class ReaderSettings {
         settings.setReport(r);
 
         TagFilter t1 = settings.getFilters().getTagFilter1();
-        t1.setBitCount(32);
+        t1.setBitCount(24);
         t1.setBitPointer(32);
         //匹配EPC部分
         t1.setMemoryBank(MemoryBank.Epc);
         t1.setFilterOp(TagFilterOp.Match);
-        t1.setTagMask("18083001");
+        t1.setTagMask("181012");
 //        t1.setTagMask("180830");
         settings.getFilters().setMode(TagFilterMode.OnlyFilter1);
 
