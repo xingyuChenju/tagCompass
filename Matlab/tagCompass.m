@@ -1,7 +1,7 @@
 clear all
 close all
-datapath = 'Data1';
-datapath = '线极化天线两个都转';
+datapath = 'Data';
+% datapath = '线极化天线两个都转';
 addpath(datapath);
 ant_type = 's';
 epc_col =1;
