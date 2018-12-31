@@ -4,16 +4,13 @@ import com.impinj.octane.Settings;
 
 import java.awt.*;
 import java.io.*;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.Scanner;
 
 public class ReadTags {
 //    public static String path = "F:\\github\\Arrays\\Stochastic resonance\\data\\RFIDdata\\Data0921";
-    public static String path = "..\\Matlab\\线极化天线两个都转\\";
-    public static String TEXTNAME = "180s";
-    public static String hostname = "169.254.0.22";
+    public static String path = "..\\Matlab\\实验数据20181231\\小黑\\";
+    public static String TEXTNAME = "0";
+    public static String hostname = "169.254.1.6";
     public static void main(String[] args) {
         try {
             File file = new File(path);

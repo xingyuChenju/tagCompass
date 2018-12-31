@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class ReaderSettings {
     public static void main(String[] args) {
-        String hostname = "169.254.0.22";
+        String hostname = "169.254.1.6";
         ImpinjReader reader = new ImpinjReader();
         try {
 //            reader.connect(hostname+".local");
@@ -69,12 +69,12 @@ public class ReaderSettings {
         settings.setReport(r);
 
         TagFilter t1 = settings.getFilters().getTagFilter1();
-        t1.setBitCount(24);
+        t1.setBitCount(32);
         t1.setBitPointer(32);
         //匹配EPC部分
         t1.setMemoryBank(MemoryBank.Epc);
         t1.setFilterOp(TagFilterOp.Match);
-        t1.setTagMask("181012");
+        t1.setTagMask("20181231");
 //        t1.setTagMask("180830");
         settings.getFilters().setMode(TagFilterMode.OnlyFilter1);
 
