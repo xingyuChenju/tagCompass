@@ -42,7 +42,7 @@ public class ReaderSettings {
         settings.setReaderMode(ReaderMode.MaxThroughput);
         settings.setSearchMode(SearchMode.DualTarget);
         settings.setSession(0);
-        settings.setTagPopulationEstimate(1);
+        settings.setTagPopulationEstimate(4);
 
         //设置功率
 

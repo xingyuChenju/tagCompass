@@ -8,8 +8,8 @@ import java.util.Scanner;
 
 public class ReadTags {
 //    public static String path = "F:\\github\\Arrays\\Stochastic resonance\\data\\RFIDdata\\Data0921";
-    public static String path = "..\\Matlab\\实验数据20181231\\小黑\\";
-    public static String TEXTNAME = "0";
+    public static String path = "..\\Matlab\\实验数据20181231\\大白2\\";
+    public static String TEXTNAME = "180";
     public static String hostname = "169.254.1.6";
     public static void main(String[] args) {
         try {
