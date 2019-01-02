@@ -4,19 +4,23 @@ import com.impinj.octane.Settings;
 
 import java.awt.*;
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ReadTags {
 //    public static String path = "F:\\github\\Arrays\\Stochastic resonance\\data\\RFIDdata\\Data0921";
-    public static String path = "..\\Matlab\\实验数据20181231\\大白2\\";
-    public static String TEXTNAME = "180";
+    public static String path = "..\\Matlab\\实验数据20190102\\小白\\";
+    public static String TEXTNAME = "postion2_circle2";
     public static String hostname = "169.254.1.6";
-    public static void main(String[] args) {
+    static Writer writer;
+    static ArrayList<String> arr = new ArrayList<>();
+    public static void main(String[] args) throws Exception {
         try {
             File file = new File(path);
             if (!file.exists() && !file.isDirectory()) {
                 file.mkdirs();
             }
+            writer = new FileWriter(path+TEXTNAME+".txt",true);
 //            Thread.sleep(15000);
             Toolkit.getDefaultToolkit().beep();
 //            String hostname = "speedwayr-10-AB-5A";
@@ -32,7 +36,8 @@ public class ReadTags {
 //                Thread.sleep(20000);
 //                Toolkit.getDefaultToolkit().beep();
 //            }
-            Thread.sleep(3000);
+            Thread.sleep(46000);
+
 //            long mm = System.currentTimeMillis();
             reader.stop();
 //            long m = System.currentTimeMillis();
@@ -46,6 +51,11 @@ public class ReadTags {
             System.out.println(ex.getMessage());
             ex.printStackTrace(System.out);
         }
+        for (String s:arr)
+            writer.write(s);
+        writer.flush();
+        writer.close();
+
     }
 //    public static double getEntropy(ArrayList<Double> phase_list) {
 //        int value_len = (int) Math.round(2 * 3 * Math.PI+1);

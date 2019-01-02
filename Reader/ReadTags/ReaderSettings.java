@@ -74,7 +74,7 @@ public class ReaderSettings {
         //匹配EPC部分
         t1.setMemoryBank(MemoryBank.Epc);
         t1.setFilterOp(TagFilterOp.Match);
-        t1.setTagMask("20181231");
+        t1.setTagMask("20190102");
 //        t1.setTagMask("180830");
         settings.getFilters().setMode(TagFilterMode.OnlyFilter1);
 

@@ -23,6 +23,7 @@ public class TagReportListenerImplementation implements TagReportListener {
     private String textname;
     DecimalFormat df1, df2;
     Boolean flag=false;
+
 //    public static String Root = Work.path;
     //一次启动只生成一次实例
     public TagReportListenerImplementation(String textname) {
@@ -110,13 +111,14 @@ public class TagReportListenerImplementation implements TagReportListener {
 //                        t.getAntennaPortNumber()
                 record= t.getEpc().toString().replace(" ","").charAt(11)+" "+
                         df2.format(t.getPhaseAngleInRadians())+" "+
-                        df1.format(t.getPeakRssiInDbm())
+                        df1.format(t.getPeakRssiInDbm())+" "+interval;
                 ;
                 //record="1"+" "+"1"+" "+df1.format(t.getPeakRssiInDbm())+" "+df2.format(t.getPhaseAngleInRadians())+" "+interval;
             }
 
             System.out.println("");
-            writeFile(record+'\n');
+            ReadTags.arr.add(record+'\n');
+//            writeFile(record+'\n');
 //            ReadTags.writer.println(record);
         }
     }
