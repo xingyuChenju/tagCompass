@@ -109,7 +109,7 @@ public class TagReportListenerImplementation implements TagReportListener {
 //                        t.getRfDopplerFrequency()+" "+
 //                        df1.format(t.getPeakRssiInDbm())+" "+
 //                        t.getAntennaPortNumber()
-                record= t.getEpc().toString().replace(" ","").charAt(11)+" "+
+                record= t.getEpc().toString().replace(" ","").charAt(7)+" "+
                         df2.format(t.getPhaseAngleInRadians())+" "+
                         df1.format(t.getPeakRssiInDbm())+" "+interval;
                 ;

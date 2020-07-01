@@ -15,7 +15,7 @@
   "readerMode": "MaxThroughput",
   "searchMode": "DualTarget",
   "session": 0,
-  "tagPopulationEstimate": 4,
+  "tagPopulationEstimate": 1,
   "lowDutyCycle": {
     "IsEnabled": false,
     "EmptyFieldTimeoutInMs": 0,
@@ -24,7 +24,7 @@
   "filters": {
     "Mode": "OnlyFilter1",
     "TagFilter1": {
-      "TagMask": "20190102",
+      "TagMask": "20070100",
       "BitPointer": 32,
       "BitCount": 32,
       "MemoryBank": "Epc",

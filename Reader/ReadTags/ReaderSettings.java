@@ -42,7 +42,7 @@ public class ReaderSettings {
         settings.setReaderMode(ReaderMode.MaxThroughput);
         settings.setSearchMode(SearchMode.DualTarget);
         settings.setSession(0);
-        settings.setTagPopulationEstimate(4);
+        settings.setTagPopulationEstimate(1);
 
         //设置功率
 
@@ -74,7 +74,7 @@ public class ReaderSettings {
         //匹配EPC部分
         t1.setMemoryBank(MemoryBank.Epc);
         t1.setFilterOp(TagFilterOp.Match);
-        t1.setTagMask("20190102");
+        t1.setTagMask("20070100");
 //        t1.setTagMask("180830");
         settings.getFilters().setMode(TagFilterMode.OnlyFilter1);
 

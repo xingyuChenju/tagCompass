@@ -9,8 +9,8 @@ import java.util.Scanner;
 
 public class ReadTags {
 //    public static String path = "F:\\github\\Arrays\\Stochastic resonance\\data\\RFIDdata\\Data0921";
-    public static String path = "..\\Matlab\\实验数据20190102\\小白\\";
-    public static String TEXTNAME = "postion2_circle2";
+    public static String path = "..\\Matlab\\实验数据20200701\\极化\\";
+    public static String TEXTNAME = "350";
     public static String hostname = "169.254.1.6";
     static Writer writer;
     static ArrayList<String> arr = new ArrayList<>();
@@ -31,12 +31,13 @@ public class ReadTags {
             reader.setTagReportListener(new TagReportListenerImplementation(TEXTNAME));
             reader.start();
             Scanner s = new Scanner(System.in);
+
 //            for (int k = 0;k<6;k++)
 //            {
 //                Thread.sleep(20000);
 //                Toolkit.getDefaultToolkit().beep();
 //            }
-            Thread.sleep(46000);
+            Thread.sleep(2000);
 
 //            long mm = System.currentTimeMillis();
             reader.stop();
